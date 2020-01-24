@@ -33,12 +33,12 @@ export default function Buttons (props) {
   const { index, total, loop, prevHandler, nextHandler } = props
   return (
     <div style={styles.wrapper}>
-      { (loop || index !== 0) && (
+      {/* { (loop || index !== 0) && (
         <div style={prevBtnStyle} onClick={prevHandler}>◀</div>
       )}
       { (loop || index !== total - 1) && (
         <div style={nextBtnStyle} onClick={nextHandler}>▶</div>
-      )}
+      )} */}
     </div>
   )
 }

@@ -17,14 +17,17 @@ class App extends React.Component {
   }
   render () {
     return (
-      <div style={{height: '100%'}}>
-        <header>
+      <div style={{height: '30%'}}>
+        {/* <header>
           <span className={this.state.axis === 'x' ? 'axis current' : 'axis'}
             onClick={this.setAxis('x')}>horizontal</span>
           <span className={this.state.axis === 'y' ? 'axis current' : 'axis'}
             onClick={this.setAxis('y')}>vertical</span>
-        </header>
+        </header> */}
         <Carousel loop auto axis={this.state.axis} widgets={[Dots, Buttons]} className="custom-class">
+          <p style={{backgroundColor: 'royalblue', height: '100%'}}>FRAME 1</p>
+          <p style={{backgroundColor: 'orange', height: '100%'}}>FRAME 2</p>
+          <p style={{backgroundColor: 'orchid', height: '100%'}}>FRAME 3</p>
           <p style={{backgroundColor: 'royalblue', height: '100%'}}>FRAME 1</p>
           <p style={{backgroundColor: 'orange', height: '100%'}}>FRAME 2</p>
           <p style={{backgroundColor: 'orchid', height: '100%'}}>FRAME 3</p>
